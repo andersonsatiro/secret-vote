@@ -1,7 +1,9 @@
+import { GlobalHeader } from "./components/GlobalHeader";
+
 export function App() {
   return (
-    <div>
-      <h1>Hello, world!!</h1>
+    <div className="w-full h-full min-h-screen bg-white100">
+      <GlobalHeader navIsActive={true} />
     </div>
   )
 }

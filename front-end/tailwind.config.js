@@ -7,26 +7,31 @@ export default {
   theme: {
     extend: {
       colors: {
-        'white-100': '#F6F6F3',
+        'white100': '#F6F6F3',
 
-        'gray-50': '#E2E8F0',
-        'gray-100': '#D9D9D9',
-        'gray-200': '#CFD3D4',
-        'gray-300': '#ABAFB1',
-        'gray-400': '#5E6366',
-        'gray-950': '#0F172A',
+        'gray50': '#E2E8F0',
+        'gray100': '#D9D9D9',
+        'gray200': '#CFD3D4',
+        'gray300': '#ABAFB1',
+        'gray400': '#5E6366',
+        'gray500': '#333333',
+        'gray950': '#0F172A',
 
-        'purple-100': '#EFEDFA',
-        'purple-200': '#A068FD',
-        'purple-300': '#570EF2',
-        'purple-400': '#3B0BA1',
+        'purple100': '#EFEDFA',
+        'purple200': '#A068FD',
+        'purple300': '#570EF2',
+        'purple400': '#3B0BA1',
 
-        'green-50': '#13FAA6',
-        'green-100': '#32936F',
+        'green50': '#13FAA6',
+        'green100': '#32936F',
 
-        'red-100': '#EF4444',
+        'red100': '#EF4444',
 
-        'blue-100': '#4B6BFB',
+        'blue100': '#4B6BFB',
+      },
+
+      dropShadow: {
+        'modal': '0 2px 4px rgba(0, 0, 0, 0.05)',
       }
     },
   },
