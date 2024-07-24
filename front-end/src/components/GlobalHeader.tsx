@@ -51,7 +51,7 @@ export function GlobalHeader({navIsActive}: GlobalHeaderProps){
         </div>
 
         {profileModalIsActive &&
-          <div className='absolute w-full mt-2 text-sm text-gray500 bg-white100 rounded-lg drop-shadow-modal'>
+          <div className='absolute w-full mt-2 text-sm text-gray500 bg-white100 rounded-lg shadow-modal'>
 
             <button
               className='w-full flex items-center justify-between px-4 py-3 border-b-solid

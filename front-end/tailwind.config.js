@@ -30,8 +30,9 @@ export default {
         'blue100': '#4B6BFB',
       },
 
-      dropShadow: {
-        'modal': '0 2px 4px rgba(0, 0, 0, 0.05)',
+      boxShadow: {
+        'modal': '0px 4px 14px rgba(0, 0, 0, 0.1)',
+        'box-admin': '0px 1px 4px rgba(0, 0, 0, 0.16)',
       }
     },
   },
