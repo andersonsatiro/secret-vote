@@ -32,7 +32,7 @@ export function LocationInputs({name, required, disabled, icon: Icon}:LocationPr
 
   useEffect(() => {
     fetchDataAPI().then(({results}) => {
-      const matchedTheSearch = results.filter((result) => console.log(result))
+
     })
   }, [searchValue])
 

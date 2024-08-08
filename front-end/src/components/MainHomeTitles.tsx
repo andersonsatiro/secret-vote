@@ -9,11 +9,11 @@ export function MainHomeTitles(){
         participe <br/> e veja os resultados
       </h1>
 
-      <h2 className="flex text-3xl">
+      <h3 className="flex text-3xl">
         das principais disputas eleitorais do
         <img src={BrasilFlag} alt="" className="w-8 ml-3" />
         .
-      </h2>
+      </h3>
 
       <p className="text-gray400">
         <span className="text-red100">Obs.:</span> os resultados desta enquete refletem

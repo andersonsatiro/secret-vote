@@ -1,5 +1,5 @@
 import { CaretDown, HandPointing, Camera } from '@phosphor-icons/react'
-import secretVotoLogo from '../assets/secret-vote-logo.png'
+import secretVoteLogo from '../assets/secret-vote-logo.png'
 import { useState } from 'react'
 
 interface GlobalHeaderProps {
@@ -15,7 +15,7 @@ export function GlobalHeader({navIsActive}: GlobalHeaderProps){
 
       <div className='flex items-center gap-4'>
         <img
-          src={secretVotoLogo}
+          src={secretVoteLogo}
           alt="Logo do site 'Voto Secreto'"
           className='w-12 h-12'
         />
