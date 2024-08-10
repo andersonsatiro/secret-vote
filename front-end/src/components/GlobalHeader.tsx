@@ -11,7 +11,7 @@ export function GlobalHeader({navIsActive}: GlobalHeaderProps){
   const [profileModalIsActive, setProfileModalIsActive] = useState(false)
 
   return(
-    <header className='flex items-center justify-between px-20 py-6 border-b-solid border-b-[1.5px] border-b-gray50'>
+    <header id='header' className='flex items-center justify-between px-20 py-6 border-b-solid border-b-[1.5px] border-b-gray50'>
 
       <div className='flex items-center gap-4'>
         <img

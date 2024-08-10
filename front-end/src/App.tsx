@@ -1,5 +1,6 @@
 import { GlobalFooter } from "./components/GlobalFooter"
 import { GlobalHeader } from "./components/GlobalHeader"
+import { MainHomeTitles } from "./components/MainHomeTitles"
 
 export function App() {
   return (
@@ -7,12 +8,10 @@ export function App() {
       <GlobalHeader navIsActive={true} />
 
       <main className="flex-grow flex flex-col items-center justify-start pt-24">
-        
+        <MainHomeTitles />
       </main>
       
       <GlobalFooter />
     </div>
   )
 }
-
-/*<MainHomeTitles />*/
