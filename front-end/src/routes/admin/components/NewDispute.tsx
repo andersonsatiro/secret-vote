@@ -2,14 +2,11 @@ import {
   PlusCircle,
   Calendar,
   IdentificationCard,
-  GlobeHemisphereEast,
-  MapTrifold, 
-  City,
 } from '@phosphor-icons/react'
 
 import { SingleValuedInput } from './SingleValuedInput'
 import { MultipleValuesInput } from './MultipleValuesInput'
-import { LocationInputs } from './LocationInputs'
+import { GlobalLocationInpus } from '../../../components/GlobalLocationInputs/GlobalLocationInputs'
 
 const dataForJobTypes = [
   {
@@ -35,7 +32,7 @@ export function NewDispute(){
         />
       </header>
 
-      <form action="" className='flex flex-col gap-3'>
+      <form className='flex flex-col gap-3'>
 
         <SingleValuedInput
           type="number"
@@ -54,12 +51,17 @@ export function NewDispute(){
           icon={IdentificationCard}
         />
 
-        <LocationInputs
-          name="country"
-          required={true}
-          disabled={false}
-          icon={GlobeHemisphereEast}
-        />
+        <GlobalLocationInpus />
+
+        <input type="submit"/>
+
+      </form>
+    </div>
+  )
+}
+
+
+/*
 
         <LocationInputs
           name="state"
@@ -73,11 +75,7 @@ export function NewDispute(){
           required={true}
           disabled={true}
           icon={City}
+          GlobeHemisphereEast
         />
-
-        <input type="submit"/>
-
-      </form>
-    </div>
-  )
-}
+        
+*/

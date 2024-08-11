@@ -20,8 +20,9 @@ export function MultipleValuesInput({name, required, data, icon:Icon}: InputProp
         className="min-w-72 py-3 pl-10 appearance-none text-gray400 text-sm bg-white100
         rounded-lg border-solid border-[1px] border-gray200 focus:outline-none focus:ring-1
         focus:ring-gray400 transition duration-500 hover:bg-gray50 hover:cursor-pointer"
+        defaultValue=""
       >
-        <option disabled selected hidden value="">escolha o tipo de cargo</option>
+        <option disabled hidden value="">escolha o tipo de cargo</option>
         {data.map(item => 
           <optgroup
             key={item.type}
