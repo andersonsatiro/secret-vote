@@ -1,4 +1,4 @@
-export interface Country {
+export interface Location {
   'id': {
     'ISO-ALPHA-2': string,
     'ISO-ALPHA-3': string
@@ -7,6 +7,8 @@ export interface Country {
 
   'nome': string,
   'regiao-intermediaria': string | null,
+
+  'sigla': string,
 
   'sub-regiao': {
     'id': {
