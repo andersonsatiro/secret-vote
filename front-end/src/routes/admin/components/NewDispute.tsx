@@ -7,6 +7,7 @@ import {
 import { SingleValuedInput } from './SingleValuedInput'
 import { MultipleValuesInput } from './MultipleValuesInput'
 import { GlobalLocationInpus } from '../../../components/GlobalLocationInputs/GlobalLocationInputs'
+import { SubmitButton } from './SubmitButton'
 
 const dataForJobTypes = [
   {
@@ -21,6 +22,11 @@ const dataForJobTypes = [
 ]
 
 export function NewDispute(){
+
+  const lidar = () => {
+    return false
+  }
+
   return(
     <div className='flex flex-col items-center gap-6 p-12 shadow-box-admin bg-white100 rounded-xl'>
 
@@ -32,13 +38,12 @@ export function NewDispute(){
         />
       </header>
 
-      <form className='flex flex-col gap-3'>
+      <form className='flex flex-col gap-3' method='POST' action='/lidando'>
 
         <SingleValuedInput
           type="number"
           placeholder="ano da campanha"
           min={2024}
-          step={2}
           required={true}
           name="year"
           icon={Calendar}
@@ -53,29 +58,9 @@ export function NewDispute(){
 
         <GlobalLocationInpus />
 
-        <input type="submit"/>
+        <SubmitButton />
 
       </form>
     </div>
   )
 }
-
-
-/*
-
-        <LocationInputs
-          name="state"
-          required={true}
-          disabled={true}
-          icon={MapTrifold}
-        />
-
-        <LocationInputs
-          name="city"
-          required={true}
-          disabled={true}
-          icon={City}
-          GlobeHemisphereEast
-        />
-        
-*/
